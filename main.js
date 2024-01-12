@@ -59,28 +59,28 @@
 
 // Bai2
 // Data input
-const oldData = [
-        {code: 'ab', name : 'Son môi'},
-        {code: 'ac', name : 'Sửa rửa mặt'},
-        {code: null, name : null},
-        {code: null, name : ''},  
-];
+// const oldData = [
+//         {code: 'ab', name : 'Son môi'},
+//         {code: 'ac', name : 'Sửa rửa mặt'},
+//         {code: null, name : null},
+//         {code: null, name : ''},  
+// ];
 
-// remove code or name different null, undefined
-const newdata = oldData.filter(data => (data?.code && data?.name) !== null || undefined);
-console.log(newdata);
+// // remove code or name different null, undefined
+// const newdata = oldData.filter(data => (data?.code && data?.name) !== null || undefined);
+// console.log(newdata);
 
-// parseArraytoObject
-const outputObject = newdata.reduce((acc,curr)=> {
-  return  {...acc,[curr?.code] : curr}
-} ,{});
-console.log(outputObject);
-// in ra thong tin mỹ phẩm có mã ab
-for(key in outputObject){
-    if(key =='ab') {
-        console.log(outputObject[key]);
-    }
-}
+// // parseArraytoObject
+// const outputObject = newdata.reduce((acc,curr)=> {
+//   return  {...acc,[curr?.code] : curr}
+// } ,{});
+// console.log(outputObject);
+// // in ra thong tin mỹ phẩm có mã ab
+// for(key in outputObject){
+//     if(key =='ab') {
+//         console.log(outputObject[key]);
+//     }
+// }
 
 // Bai3
 // const firstPromise = new Promise((resolve, reject) => {
